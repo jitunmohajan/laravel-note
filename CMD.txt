@@ -1,0 +1,6 @@
+creating project:
+1.composer create-project laravel/laravel projrct_name
+create a controller:
+2.php artisan make:controller controller-name
+(test_conroller)
+3.
