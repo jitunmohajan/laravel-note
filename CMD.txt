@@ -3,4 +3,5 @@ creating project:
 create a controller:
 2.php artisan make:controller controller-name
 (test_conroller)
-3.
+creating auto login files:
+3.php artisan make:auth
