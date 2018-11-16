@@ -5,3 +5,5 @@ create a controller:
 (test_conroller)
 creating auto login files:
 3.php artisan make:auth
+creating table:
+4.php artisan migrate
