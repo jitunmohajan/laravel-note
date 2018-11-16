@@ -1,0 +1,19 @@
+1.git config --global user.email "myemail which uses on my account"
+2.git config --global user.name "username"
+3.git init 
+4.git add .       //(it will add all file)OR git add filename.extention
+5.git commit -m"commit here"
+6.git remote add origin project-link.git
+7.git push -u origin master
+8.git status
+9.ssh-keygen
+10.git clone project-link
+
+_____delete uncommited files__
+1.git status
+2.git checkout -- .
+___delete commited files____
+1.git log
+shows the commit id for every commit
+2.git revert -n  bbd5427a0bff604e910b87c8556ca7058213600c
+bbd5427a0bff604e910b87c8556ca7058213600c=commit id
