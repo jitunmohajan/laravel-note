@@ -1,0 +1,158 @@
+Creating a Laravel Project
+Check this url for creating a laravel project
+Creating Layout Page in Laravel
+Check this url for creating the layout template
+Basic Things to Consider
+Check if route is declared in routes/web.php
+Check if method type (GET/POST) is properly declared in routes/web.php
+Check if route parameter is properly passed from view/forms
+In controller file check, public function MethodName($id)
+In view file for insertion, check the below 2 lines are added. Also check if route is in routes/web.php
+<form action="{{ URL::to('store') }}" method="post">
+{{ csrf_field() }}
+In view file for update, check the below 2 lines are added. Also check if route is in routes/web.php
+<form action="{{ URL::to('update/'.$data->id) }}" method="post">
+{{ csrf_field() }}
+Don’t forget to restart server using php artisan serve after any change in .env file
+Fix Errors you Can Encounter While Migration
+Error: Specified key was too long error
+Way to Fix:
+	Step 1: Go to Project_Folder/app/Providers/AppServiceProvider.php
+	Step 2: Add the below line 
+use Illuminate\Support\Facades\Schema; after 
+use Illuminate\Support\ServiceProvider;
+Step 3: Inside the boot method add the below line:
+	Schema::defaultStringLength(191);
+Follow the steps in this url, if you can’t get my points.
+
+Mostly Used Commands
+Creating controller: php artisan make:controller SampleController
+       Controller will be created inside project_folder/app/Http/Controllers
+Creating migration+model: php artisan make:model Sample -m
+                              Model will be created inside project_folder/app
+                              Migration will be created inside project_folder/database/migrations
+Structure for Users Table
+
+Mandatory Column
+Type
+id
+Int+ primary + auto increments
+name
+string
+email
+string
+Password (encrypted) md5 can be used
+string
+status
+boolean
+role
+Int (0=admin, 1= one_type, 2=second_type etc)
+created_by
+Foreign_Key_Referencing_Same_Table can be NULL
+updated_by
+Foreign_Key_Referencing_Same_Table can be NULL
+Structure for Categories Table (Mainly for Ecommerce)
+
+Mandatory Column
+Type
+id
+Int+ primary + auto increments
+name/ title
+text
+slug
+text
+parent
+Int (Referencing_Same_Table) can be NULL
+status
+boolean
+Foreign Key AssigningSchema::create('categories', function (Blueprint $table) {
+           $table->engine = 'InnoDB';
+           $table->increments('id');
+           $table->string('title');
+
+           $table->boolean('status');
+
+           $table->integer('createdby')->unsigned()->index();
+           $table->foreign('createdby')
+               ->references('id')->on('users')
+               ->onDelete('cascade');
+
+           $table->timestamps();
+       });
+Seeding
+factory(App\Category::class,5)->create();
+factory(App\Product::class,50)->create();
+
+$factory->define(App\Category::class, function (Faker\Generator $faker) {
+
+   return [
+       'title'            => str_random(10),
+       'status'           => 1,
+       'createdby'        => 1
+   ];
+});
+
+$factory->define(App\Product::class, function (Faker\Generator $faker) {
+   $categories = App\Category::pluck('id')->toArray();
+   return [
+       'title'            => str_random(10),
+       'categoryid'       => $faker->randomElement($categories),
+       'status'           => 1,
+       'createdby'        => 1
+   ];
+});
+
+
+Login Process
+Create form in a view
+Must put the {{ csrf_field }} after the opening <form> tag
+Must put the enctype="multipart/form-data" while working with image upload (Not required otherwise).
+Example:
+<form action="{{ ROUTE_HERE }}" method="post" enctype="multipart/form-data">
+            {{ csrf_field }}
+Check if Route is ok (in web.php file)
+Receive email, password in controller (email, password fields come from view)
+Query Database.Here is the code snippet.
+        $user     = User::where('email','=',$email)
+                        	        ->where('password','=',md5($password)) 
+                        	        ->first();
+
+        if($user)
+        {
+        	Session::put('userid',$user->id);
+            Session::put('useremail',$user->email);
+            return redirect()->route('admin');
+        }
+        else
+        {
+            return redirect()->back()->with('msg',"The email or password you entered 
+                                                                       is incorrect");
+        }
+Protecting Routes via Middleware
+Creating middleware: php artisan make:middleware IsLoggedIn . Middleware will be created inside project_folder/app/Http/Middleware
+Go inside the file created. Put the following code snippet inside handle method:
+    public function handle($request, Closure $next)
+    {
+        if(!Session::has('userid')){
+            return redirect()->route('login');
+        }
+        return $next($request);
+    }
+Don’t forget to import use Session; before the class
+Go to app/http/kernel.php and add this line: 
+'checkloggedin' => \App\Http\Middleware\IsLoggedIn::class inside $routeMiddleware array. Now we can use checkloggedin as the middleware as below:
+Route::group(['middleware' => 'checkloggedin'], function(){
+	YOUR ROUTES HERE
+});
+
+Laravel Bangla Tutorial Link
+Check the following link
+Laravel Multiple Image Upload
+Check the following link
+Bootstrap Beginner
+Check the following link
+For Those who have Problems in PHP
+For understanding layout: check this
+For understanding numeric array: check this
+For understanding associative array: check this
+For understanding CRUD: check this
