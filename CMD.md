@@ -2,7 +2,6 @@
 composer create-project laravel/laravel projrct_name
 ## create a controller:
 php artisan make:controller controller-name
-(test_conroller)
 ## creating auto login and files:
 php artisan make:auth
 ## create a new table file
