@@ -7,5 +7,6 @@ php artisan make:controller controller-name
 php artisan make:auth
 ## create a new table file
 php artisan make:model table-name -m
+
 ## creating table:
 php artisan migrate
