@@ -1,0 +1,9 @@
+back to your previous commit
+suppose a,b,c is your commit than
+
+how to get back to your commit b or a
+
+ans>>>
+1.git log
+2.git reset --hard commit-code-from-git-log
+3.git push --force
