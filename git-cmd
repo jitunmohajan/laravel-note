@@ -12,6 +12,9 @@
 _____delete uncommited files__
 1.git status
 2.git checkout -- .
+____back to the previous commit___
+git reset --soft commit_link
+git push --force
 ___delete commited files____
 1.git log
 shows the commit id for every commit
