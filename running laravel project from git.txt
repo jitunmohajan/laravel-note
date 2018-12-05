@@ -1,0 +1,11 @@
+git clone <URL-link>
+cd <repositoryname>
+composer install
+cp .env.example .env
+php artisan key:generate
+
+#Seeder:
+php artisan make:seeder UserTableSeerder
+(UserTableSeeder is the seeder name here)
+
+
