@@ -1,0 +1,8 @@
+$ git stash save "commit here"
+$ git stash list
+$ git stash apply stash@{number}
+$ git stash pop
+or pop specific stash>
+$ git stash drop stash@{number}
+$ git stash clear
+//clear all
