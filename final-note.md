@@ -1,20 +1,22 @@
 ## Serve:
 php artisan serve
 php artisan --port=8002 or anything
-
+__________________________________________________________________________________
 ## Create project:
 composer create-project laravel/laravel project-name
+__________________________________________________________________________________
 ## Create model:
 php artisan make:model model-name -m
+__________________________________________________________________________________
 ## Create Controller:
 php artisan make:comtroller ControllerName
-
+__________________________________________________________________________________
 ## Create Controller & resources:
 php artisan make:comtroller ControllerName --resource
-
+__________________________________________________________________________________
 ## show routelist:
 php artisan route:list
-
+__________________________________________________________________________________
 ## template copy>>
 	backend file>>
 	write it in the middle where you need to change
@@ -29,7 +31,7 @@ main file >>
 			write here 	
 		@endsection 
 
-
+__________________________________________________________________________________
 ## LOGIN::>>>>
 * step 1:
 ```html
@@ -87,12 +89,12 @@ Don’t forget to import use Session; before the class
 use Illuminate\Support\Facades\Session;
 //use Illuminate\Support\Facades\Redirect;  //use it when you use redirect function
 ```
-* step 3:
+* step 4:
 Go to app/http/kernel.php and add this line: inside $routeMiddleware array 
 ```
 'checkloggedin' => \App\Http\Middleware\IsLoggedIn::class,
 ```
-* step 4:
+* step 5:
 Now we can use checkloggedin as the middleware as below:
 ```php
 Route::group(['middleware' => 'checkloggedin'], function(){
@@ -115,6 +117,7 @@ public function logout(Request $req)
     	
     }
 ```
+__________________________________________________________________________________
 ## REGISTER::>>
 * step 1:
 ```html
@@ -138,10 +141,12 @@ public function store(Request $req){
     	}
 }
 ```
+__________________________________________________________________________________
 * step 4:
 ```php
 use App\User;
 ```
+__________________________________________________________________________________
 
 
 
