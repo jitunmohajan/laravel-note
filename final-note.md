@@ -63,7 +63,44 @@ public function postlogin(Request $req){
 use App\User;
 use Session; //when you use session function
 ```
+__________________________________________________________________________________
+## Protecting Routes via Middleware
+* step 1: Creating middleware: 
+```
+php artisan make:middleware IsLoggedIn 
+```
+//Middleware will be created inside project_folder/app/Http/Middleware
+*step 2:
+Go inside project_folder/app/Http/Middleware the file created. Put the following code snippet inside handle method:
+```php
+public function handle($request, Closure $next)
+    {
+        if(!Session::has('userid')){
+            return redirect()->route('login');
+        }
+        return $next($request);
+    }
+```
+step 3:
+Don’t forget to import use Session; before the class
+```php
+use Illuminate\Support\Facades\Session;
+//use Illuminate\Support\Facades\Redirect;  //use it when you use redirect function
+```
+* step 3:
+Go to app/http/kernel.php and add this line: inside $routeMiddleware array 
+```
+'checkloggedin' => \App\Http\Middleware\IsLoggedIn::class,
+```
+* step 4:
+Now we can use checkloggedin as the middleware as below:
+```php
+Route::group(['middleware' => 'checkloggedin'], function(){
+	YOUR ROUTES HERE
+});
+```
 
+__________________________________________________________________________________
 ## LogOut::>>
 * step 1:
 ```php
