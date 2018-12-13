@@ -35,6 +35,7 @@ main file >>
 ```html
 <form method="post" action="{{ URL::to('postlogin' )}}">
             {{csrf_field()}}
+<button type="submit" class="btn btn-primary btn-block">Register</button>	
 ```
 * step 2:
 ```php
