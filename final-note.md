@@ -37,12 +37,12 @@ main file >>
             {{csrf_field()}}
 ```
 * step 2:
-```
+```php
 Route::get('/','HomeController@login');
 Route::post('postlogin','HomeController@postlogin');
 ```
 ** step 3:
-```
+```php
 public function postlogin(Request $req){
     	$email=$req->email;
     	$password=$req->password;
@@ -58,7 +58,7 @@ public function postlogin(Request $req){
     }
 ```
 * step 4:
-```
+```php
 use App\User;
 use Session; //when you use session function
 ```
@@ -70,12 +70,12 @@ use Session; //when you use session function
 <button type="submit" class="btn btn-primary btn-block">Register</button>
 ```
  * step 2:
-```
+```php
 Route::get('register','HomeController@register');
 Route::post('store','HomeController@store');
 ```
 * step 3:
-```
+```php
 public function store(Request $req){
     	$obj=new User();
     	$obj->firstName=$req->firstName;
@@ -86,7 +86,7 @@ public function store(Request $req){
 }
 ```
 * step 4:
-```
+```php
 use App\User;
 ```
 
