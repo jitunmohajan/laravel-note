@@ -63,6 +63,21 @@ public function postlogin(Request $req){
 use App\User;
 use Session; //when you use session function
 ```
+
+## LogOut::>>
+* step 1:
+```php
+Route::get('logout','HomeController@logout');
+```
+* step 2:
+```php
+public function logout(Request $req)
+    {
+    	$req->session()->flush();
+    	return redirect('/');
+    	
+    }
+```
 ## REGISTER::>>
 * step 1:
 ```html
