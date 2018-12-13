@@ -66,10 +66,10 @@ use Session; //when you use session function
 __________________________________________________________________________________
 ## Protecting Routes via Middleware
 * step 1: Creating middleware: 
-```
+```git
 php artisan make:middleware IsLoggedIn 
-```
 //Middleware will be created inside project_folder/app/Http/Middleware
+```
 *step 2:
 Go inside project_folder/app/Http/Middleware the file created. Put the following code snippet inside handle method:
 ```php
