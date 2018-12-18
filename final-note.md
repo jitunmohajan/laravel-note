@@ -148,6 +148,33 @@ use App\User;
 __________________________________________________________________________________
 
 
+## Seeder::::::>>>>>
+* firstly create a model if model didnt create before
 
+* step 1:
+php artisan make:seeder UsersTableSeeder
+* step 2:
+goto database/factory/UserFactory
+add fakers according to your need
 
+* step 3:
+goto database/seeds/DatabaseSeeder.php
+```php
+public function run()
+    {
+         $this->call(UsersTableSeeder::class);
+    }
+```
+* step 4:
+goto database/seeds/UsersTableSeeder.php
+```php
+public function run()
+    {
+        factory(App\Sample::class,15)->create();
+    }
+```
+
+* step 5:
+php artisan migrate --seed
+_________________________________________________-
 
