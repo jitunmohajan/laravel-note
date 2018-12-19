@@ -29,7 +29,7 @@ main file >>
 ```
 		@section('content')
 			write here 	
-		@endsection 
+		@endsection // or you can use @stop
 
 __________________________________________________________________________________
 ## LOGIN::>>>>
