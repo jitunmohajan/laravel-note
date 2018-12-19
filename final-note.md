@@ -102,6 +102,51 @@ Route::group(['middleware' => 'checkloggedin'], function(){
 });
 ```
 
+
+______________________________________________
+
+
+## Validation:::::>>>>>
+
+* step 1:
+
+   public function store(Request $req){
+
+    	 $validatedData = $req->validate([
+        'fname' => 'required',
+        'lname' => 'required',
+        'email' => 'required|email',
+        'password' => 'required',
+    	]);
+
+    	$obj=new Sample();
+    	$obj->fname=$req->fname;
+    	$obj->lname=$req->lname;
+    	$obj->email=$req->email;
+    	$obj->password=$req->password;
+    	
+
+    	if($obj->save()){
+    		return view('frontend.login');
+    	}
+
+}
+
+* step 2:
+
+<h1>Create Post</h1>
+
+@if ($errors->any())
+    <div class="alert alert-danger">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
+
 __________________________________________________________________________________
 ## LogOut::>>
 * step 1:
