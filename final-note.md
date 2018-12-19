@@ -300,8 +300,27 @@ Route::post('update/{id}','HomeController@update');
 
 
 
+___________________________________________________________-
 
+## Delete:::>>>
 
+* step 1:
+```html
+<a href="{{ URL::to('del',['id'=>$d->id]) }}" class="btn btn-info">Delete</a>
+```
+* step 2:
+```php
+Route::get('del/{id}','HomeController@del');
+```
+* step 3:
+```php
+ public function del($id){
+       
+        $sample = Sample::find($id)->delete();       
+       
+         return redirect('allpost');
+    }
+```
 
 
 
