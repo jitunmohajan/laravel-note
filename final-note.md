@@ -183,3 +183,125 @@ public function run()
 php artisan migrate --seed
 _________________________________________________-
 
+## ALL post show all data::>>
+
+* step 1:
+```html
+@extends('backend.layout')
+@section('content')
+     <div class="container">
+  <h2>All Post</h2>            
+  <table class="table">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Title</th>
+        <th>Description</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      @if(count($data)>0)
+        @foreach($data as $d)
+          <tr>
+            <td>{{ $d->id }}</td>
+            <td>{{ $d->title }}</td>
+            <td>{{ $d->description }}</td>
+           <td>
+              <a href="{{ URL::to('edit',['id'=>$d->id]) }}" class="btn btn-info">Edit</a>
+              <a href="{{ URL::to('edit',['id'=>$d->id]) }}" class="btn btn-info">Delete</a>
+            </td>
+           
+          </tr>
+        @endforeach
+      @else
+
+      @endif
+     
+      
+    </tbody>
+  </table>
+</div>
+
+@stop
+````
+
+* step 2:
+```php
+Route::get('allpost','HomeController@allpost');
+```
+
+* step 3:
+```php
+ public function allpost(){
+        $obj = Sample::all();  //Sample is the model name 
+            return view('frontend.allpost', ['data'=>$obj]);
+
+    }
+```
+
+* step 4:
+```html
+<td><a href="{{ URL::to('edit/{$samples->id}') }}"  type="button" class="btn btn-primary">Edit</a></td>
+```
+
+
+_______________________________________________________
+
+## Edit::>>
+
+* step 1:
+```html
+@extends('backend.layout')
+@section('content')
+      <div class="card-body">
+
+
+            <form id="signup-form" class="signup-form" method="post" action="{{ URL::to('update',['id'=>$data->id]) }}">
+                {{csrf_field()}}
+                 <div class="form-row">
+                  <div class="form-group col-md-6">
+                    <label>Title</label>
+                    <input type="text" value="{{ $data->title }}" class="form-control" name="title" placeholder="Title">
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label>Description</label>
+                  <textarea name="description" class="form-control" rows="5">{{ $data->description }}</textarea>
+                </div>
+                          
+                <button type="submit" class="btn btn-primary">Add</button>
+              </form>
+            </div>
+
+@stop
+```
+* step 2:
+```php
+Route::post('update/{id}','HomeController@update');
+```
+* step 3:
+```php
+  public function update(Request $req,$id){
+       
+        $obj = Sample::find($id);       
+        $obj->title = $req->title;
+        $obj->description = $req->description;
+         if($obj->save())
+        {
+             //Session::put('message', 'Successfully Updated...!!');
+            return redirect('allpost');
+        }
+       // return view('frontend.edit',['data'=>$sample]);
+    }
+
+```
+
+
+
+
+
+
+
+
+
