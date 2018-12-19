@@ -181,6 +181,7 @@ public function run()
 * step 5:
 
 php artisan migrate --seed
+
 _________________________________________________-
 
 ## ALL post show all data::>>
