@@ -11,6 +11,7 @@ composer create-project laravel/laravel project-name
 * offline setup::
 
 composer global require laravel/installer
+
 laravel new blog
 __________________________________________________________________________________
 ## Create model:
