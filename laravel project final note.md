@@ -3,9 +3,12 @@ php artisan serve
 php artisan --port=8002 or anything
 __________________________________________________________________________________
 ## Create project:
-* online creation
+
+* online creation:
+
 composer create-project laravel/laravel project-name
-*offline setup::
+
+* offline setup::
 
 composer global require laravel/installer
 laravel new blog
