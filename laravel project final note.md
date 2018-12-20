@@ -3,7 +3,12 @@ php artisan serve
 php artisan --port=8002 or anything
 __________________________________________________________________________________
 ## Create project:
+* online creation
 composer create-project laravel/laravel project-name
+*offline setup::
+
+composer global require laravel/installer
+laravel new blog
 __________________________________________________________________________________
 ## Create model:
 php artisan make:model model-name -m
