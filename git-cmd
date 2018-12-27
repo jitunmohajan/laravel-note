@@ -1,5 +1,11 @@
+first account>>
 1.git config --global user.email "myemail which uses on my account"
 2.git config --global user.name "username"
+configure another git account>>
+1.git config --global user.email "myemail which uses on my account"
+2.git config --global user.name "username"
+3.git remote set-url origin git@github.com:jitundark/test.git
+>>>>>>>>>>>>>>>>>>>>
 3.git init 
 4.git add .       //(it will add all file)OR git add filename.extention
 5.git commit -m"commit here"
