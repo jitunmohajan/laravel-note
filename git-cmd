@@ -18,6 +18,8 @@ configure another git account>>first add ssh key
 _____delete uncommited files__
 1.git status
 2.git checkout -- .
+3.git branch branch_name
+
 ____back to the previous commit___
 git reset --soft commit_link
 git push --force
