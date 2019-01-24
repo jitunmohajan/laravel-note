@@ -4,28 +4,36 @@
 ``` 
  $table->string('filename');
 ```php
+
 * step 2:
+
 ```
 	composer require intervention/image
 ```
+
 * step 3:
+
 	copy paste here following things config >> app.php
+	
 	```
 	'providers' => [
         // ...
         Intervention\Image\ImageServiceProvider::class,
     	]
 ```php
+
 ```
 	'aliases' => [
         // ...
         'Image' => Intervention\Image\Facades\Image::class,
    	 ]
 ```php
+
 * step 4: create file in public folder and name in
 	 images and thumbnail
 
 * step 5:
+
 ```
 use App\ImageModel;
 use Image;
@@ -50,12 +58,15 @@ public function store(Request $request)
 ```php
 
 * sep 6: add this into store function validation if needed
+
 ```
 $this->validate($request, [
             'filename' => 'image|required|mimes:jpeg,png,jpg,gif,svg'
   ]);
 ```php
+
 * step 7:
+
 ```
 <html lang="en">
 <head>
@@ -88,6 +99,7 @@ $this->validate($request, [
 ```html
 
 step 8:
+
 ```
 php artisan make:controller ImageController
 ```
