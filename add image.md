@@ -1,9 +1,12 @@
 # Adding image:>>
 
 * step 1:add on database>>
+
 ``` 
  $table->string('filename');
+ 
 ```php
+
 
 * step 2:
 
