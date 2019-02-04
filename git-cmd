@@ -28,3 +28,7 @@ ___delete commited files____
 shows the commit id for every commit
 2.git revert -n  bbd5427a0bff604e910b87c8556ca7058213600c
 bbd5427a0bff604e910b87c8556ca7058213600c=commit id
+
+
+
+
