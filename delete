@@ -10,3 +10,4 @@ step 3:
        
          return redirect('allpost');
     }
+//follow steps serially
