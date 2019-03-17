@@ -141,6 +141,15 @@ ______________________________________________
 
 }
 ```
+#OR
+
+paste this code after input tag for showing single input
+
+```php
+<span style="color: red;">{{ $errors->first('email') }}</span>
+```
+
+
 * step 2:
 ```php
 <h1>Create Post</h1>
