@@ -143,7 +143,7 @@ ______________________________________________
 ```
 #OR
 
-paste this code after input tag for showing single input
+paste this code after input tag for showing single input error(like email invalid or invalid password)
 
 ```php
 <span style="color: red;">{{ $errors->first('email') }}</span>
