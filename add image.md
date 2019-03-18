@@ -8,22 +8,25 @@
 ```php
 
 
+
 * step 2:
+
 
 ```
 	composer require intervention/image
-```
+```php
 
 * step 3:
 
 	copy paste here following things config >> app.php
 	
-	```
+```
 	'providers' => [
         // ...
         Intervention\Image\ImageServiceProvider::class,
     	]
 ```php
+
 
 ```
 	'aliases' => [
@@ -32,10 +35,13 @@
    	 ]
 ```php
 
+
 * step 4: create file in public folder and name in
 	 images and thumbnail
 
+
 * step 5:
+
 
 ```
 use App\ImageModel;
@@ -60,7 +66,9 @@ public function store(Request $request)
     }
 ```php
 
+
 * sep 6: add this into store function validation if needed
+
 
 ```
 $this->validate($request, [
