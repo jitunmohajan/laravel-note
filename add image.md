@@ -2,38 +2,32 @@
 
 * step 1:add on database>>
 
-``` 
+```php
  $table->string('filename');
- 
-```php
-
-
-
+ ```
 * step 2:
-
-
-```
-	composer require intervention/image
 ```php
+	composer require intervention/image
+```
 
 * step 3:
 
 	copy paste here following things config >> app.php
 	
-```
+```php
 	'providers' => [
         // ...
         Intervention\Image\ImageServiceProvider::class,
     	]
-```php
-
-
 ```
+
+
+```php
 	'aliases' => [
         // ...
         'Image' => Intervention\Image\Facades\Image::class,
    	 ]
-```php
+```
 
 
 * step 4: create file in public folder and name in
@@ -43,7 +37,7 @@
 * step 5:
 
 
-```
+```php
 use App\ImageModel;
 use Image;
 
@@ -64,21 +58,21 @@ public function store(Request $request)
 
         return back()->with('success', 'Your images has been successfully Upload');
     }
-```php
+```
 
 
 * sep 6: add this into store function validation if needed
 
 
-```
+```php
 $this->validate($request, [
             'filename' => 'image|required|mimes:jpeg,png,jpg,gif,svg'
   ]);
-```php
+```
 
 * step 7:
 
-```
+```hmtl
 <html lang="en">
 <head>
   <title>Laravel  Image Intervention</title>
@@ -107,10 +101,10 @@ $this->validate($request, [
   </div>
 </body>
 </html>
-```html
+```
 
 step 8:
 
-```
+```php
 php artisan make:controller ImageController
 ```
