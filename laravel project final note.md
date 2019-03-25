@@ -12,7 +12,7 @@ composer create-project laravel/laravel project-name
 
 composer global require laravel/installer
 
-laravel new blog
+laravel new project-name
 __________________________________________________________________________________
 ## Create model:
 php artisan make:model model-name -m
