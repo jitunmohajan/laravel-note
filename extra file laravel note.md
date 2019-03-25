@@ -45,8 +45,8 @@ or
   };
 </script>
 ```
-# [FOR MORE HELP VISIT](https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded?fbclid=IwAR1GXOkRFIix0ucXCUZPIdctNirQkX9Ep6hq0hHey9spI3ulhLF_1JGn2Ik)
+# [FOR MORE HELP VISIT for image review](https://stackoverflow.com/questions/4459379/preview-an-image-before-it-is-uploaded?fbclid=IwAR1GXOkRFIix0ucXCUZPIdctNirQkX9Ep6hq0hHey9spI3ulhLF_1JGn2Ik)
 
 
-unique:table_name,colum_name
+
 
