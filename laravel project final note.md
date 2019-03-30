@@ -9,8 +9,10 @@ ________________________________________________________________________________
 composer create-project laravel/laravel project-name
 
 * offline setup::
-
+setup for ofline
 composer global require laravel/installer
+
+create new project in ofline>
 
 laravel new project-name
 __________________________________________________________________________________
