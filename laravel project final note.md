@@ -1,3 +1,6 @@
+## laravel tutorial:
+1.[Bangla tutorial](https://www.youtube.com/watch?v=l6R5oZe20bA&list=PLH246IZCIBeA-k6OeV4zw7MyhzzrQPyyL)
+
 ## Serve:
 php artisan serve
 php artisan --port=8002 or anything
