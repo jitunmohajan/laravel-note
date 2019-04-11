@@ -1,6 +1,6 @@
 # Adding image:>>
 
-* step 1:add on database>>
+* step 1:add on database table>>
 
 ```php
  $table->string('filename');
