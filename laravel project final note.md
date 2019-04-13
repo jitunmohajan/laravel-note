@@ -20,7 +20,7 @@
 * [show all post](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#all-post-show-all-data)
 * [Edit](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#edit)
 * [Delete](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#delete)
-
+* [Adding image or upload image](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#adding-image)
 
 ## laravel tutorial:
 1.[Bangla tutorial](https://www.youtube.com/watch?v=l6R5oZe20bA&list=PLH246IZCIBeA-k6OeV4zw7MyhzzrQPyyL)
