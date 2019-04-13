@@ -210,6 +210,7 @@ ______________________________________________
         'lname' => 'required',
         'email' => 'required|email',
         'password' => 'required',
+	//'password' => 'required|exists:users,password|min:6',//here users=table_name and password coloum name 
     	]);
 
     	$obj=new Sample();
