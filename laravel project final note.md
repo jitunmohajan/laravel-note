@@ -1,6 +1,25 @@
 ## Topic
 
 * [create project](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#create-project)
+* [create Model](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md)
+* [Create Controller](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#create-controller)
+* [Create Controller with resources](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#create-controller--resources)
+* [show routelist](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#show-routelist)
+* [Mastering Laravel](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#template-copy)
+* [Login](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#login)
+* [log out](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#logout)
+* [Show successful message](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#showing-successfull-massage)
+* [Change validation name](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#to-change-validation-name-)
+* [Show previous text after finding invalid data](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#for-showing-previous-text-after-finding-invalid-data)
+* [Review the image when we upload the image](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#review-the-image-when-we-take-image-as-input)
+* [Middleware](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#protecting-routes-via-middleware)
+
+* [Validation](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#validation)
+* [Register](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#register)
+* [Seeder](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#seeder)
+* [show all post](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#all-post-show-all-data)
+* [Edit](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#edit)
+* [Delete](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#delete)
 
 
 ## laravel tutorial:
