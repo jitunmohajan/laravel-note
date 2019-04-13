@@ -5,7 +5,7 @@
 * [Create Controller](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#create-controller)
 * [Create Controller with resources](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#create-controller--resources)
 * [show routelist](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#show-routelist)
-* [Mastering Laravel](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#template-copy)
+* [Mastering the template in Laravel](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#template-copy)
 * [Login](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#login)
 * [log out](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#logout)
 * [Show successful message](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#showing-successfull-massage)
