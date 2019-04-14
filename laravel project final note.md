@@ -1,7 +1,7 @@
 ### Some Important link:
 
 * [laravel 5.8](https://laravel.com)
-* [anik sir](https://docs.google.com/document/d/1NJSldZ6a2Fs4q4q7KgH2llKdtLe4hylUwi10lKTGNDQ/edit?fbclid=IwAR1HTl96WSO_Xire6B3BXxoA-DwYH_qtqVJi-CWPXAYnpFEFBfQaFCS-hNc)
+* [anik sir(laravel note)](https://docs.google.com/document/d/1NJSldZ6a2Fs4q4q7KgH2llKdtLe4hylUwi10lKTGNDQ/edit?fbclid=IwAR1HTl96WSO_Xire6B3BXxoA-DwYH_qtqVJi-CWPXAYnpFEFBfQaFCS-hNc)
 * [theme 1](https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/)
 * [Bootstrap](https://getbootstrap.com)
 * [Bootsnip](https://bootsnipp.com)
