@@ -2,3 +2,5 @@ $validatedData = $req->validate([
             'email' => 'required|email',
             'password' => 'required|exists:users,password|min:6',
         ]);
+        
+[link](laravel.com)        
