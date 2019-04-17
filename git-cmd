@@ -1,4 +1,5 @@
-first account>>
+____first account>>
+
 1.git config --global user.email "myemail which uses on my account"
 2.git config --global user.name "username"
 configure another git account>>first add ssh key
