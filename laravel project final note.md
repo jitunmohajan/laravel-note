@@ -47,7 +47,7 @@ ________________________________________________________________________________
 
 * first open git bash on the path where you want to run the laravel project
 
-* step 1:git clone <URL-link>
+* step 1:git clone project-URL-link
 * step 2:cd <repositoryname>
 * step 3:composer install
 * step 4:cp .env.example .env
