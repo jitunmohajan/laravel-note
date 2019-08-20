@@ -40,8 +40,12 @@
 php artisan serve
 php artisan --port=8002 or anything
 _________________________________________________________________________________
-##Run laravel project from github
-first open git bash on the path where you want to run the laravel project
+
+
+
+## Run laravel project from github:
+
+*first open git bash on the path where you want to run the laravel project
 step 1:git clone <URL-link>
 step 2:cd <repositoryname>
 step 3:composer install
