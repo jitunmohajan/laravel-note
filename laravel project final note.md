@@ -1,6 +1,7 @@
 ### Some Important link:
 
 * [laravel 5.8](https://laravel.com)
+* [git tutorial](https://www.youtube.com/watch?v=M2a7OQX8te4&list=PLoR56CteKZnC0lBlHdnVnq0J3yDhgbi9w&fbclid=IwAR2-O5HXeHCSjEYlRVb718dOw32phM_oZ-catDY9bEGhw4AZXVZOZECJzG4)
 * [anik sir(laravel note)](https://docs.google.com/document/d/1NJSldZ6a2Fs4q4q7KgH2llKdtLe4hylUwi10lKTGNDQ/edit?fbclid=IwAR1HTl96WSO_Xire6B3BXxoA-DwYH_qtqVJi-CWPXAYnpFEFBfQaFCS-hNc)
 * [theme 1](https://colorlib.com/wp/free-bootstrap-admin-dashboard-templates/)
 * [template monster](https://www.templatemonster.com/bootstrap-website-templates/)
