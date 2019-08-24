@@ -8,6 +8,7 @@
 * [Bootstrap](https://getbootstrap.com)
 * [Bootsnip](https://bootsnipp.com)
 * [Vue.js](https://vuejs.org)
+* [pixels for high quality image](https://www.pexels.com)
 
 ## Topic
 * [Run laravel project from github](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#run-laravel-project-from-github)
