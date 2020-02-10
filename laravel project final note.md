@@ -74,7 +74,7 @@ ________________________________________________________________________________
 php artisan make:model model-name -m
 __________________________________________________________________________________
 ## Create Controller:
-php artisan make:comtroller ControllerName
+php artisan make:controller ControllerName
 __________________________________________________________________________________
 ## Create Controller & resources:
 php artisan make:comtroller ControllerName --resource
