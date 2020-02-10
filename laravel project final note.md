@@ -37,7 +37,23 @@
 
 ## laravel tutorial:
 1.[Bangla tutorial](https://www.youtube.com/watch?v=l6R5oZe20bA&list=PLH246IZCIBeA-k6OeV4zw7MyhzzrQPyyL)
+## Create project:
 
+first setup xamp than composer(from laravel page) after that use this commands>> 
+* online creation:
+
+composer create-project laravel/laravel project-name
+
+**offline setup::
+
+setup for ofline
+
+composer global require laravel/installer
+
+**create new project in ofline>
+
+laravel new project-name
+__________________________________________________________________________________
 ## Serve:
 php artisan serve
 php artisan --port=8002 or anything
@@ -57,20 +73,7 @@ ________________________________________________________________________________
 * step 6: create a database then change database name on .env file 
 * step 7:php artisan migrate
 __________________________________________________________________________________
-## Create project:
 
-* online creation:
-
-composer create-project laravel/laravel project-name
-
-* offline setup::
-setup for ofline
-composer global require laravel/installer
-
-create new project in ofline>
-
-laravel new project-name
-__________________________________________________________________________________
 ## Create model:
 php artisan make:model model-name -m
 __________________________________________________________________________________
