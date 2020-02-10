@@ -42,17 +42,13 @@
 first setup xamp than composer(from laravel page) after that use this commands>> 
 * online creation:
 
-composer create-project laravel/laravel project-name
+     composer create-project laravel/laravel project-name
 
-**offline setup::
+* offline setup::
+    composer global require laravel/installer
 
-setup for ofline
-
-composer global require laravel/installer
-
-**create new project in ofline>
-
-laravel new project-name
+* create new project in ofline>
+    laravel new project-name
 __________________________________________________________________________________
 ## Serve:
 php artisan serve
