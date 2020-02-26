@@ -14,7 +14,7 @@
 * [Run laravel project from github](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#run-laravel-project-from-github)
 
 * [create project](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#create-project)
-* [edit env file]
+* [edit env file](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#edit-env-file-like-as-followed)
 * [create Model](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md)
 * [Create Controller](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#create-controller)
 * [Create Controller with resources](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#create-controller--resources)
