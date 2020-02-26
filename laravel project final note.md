@@ -14,6 +14,7 @@
 * [Run laravel project from github](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#run-laravel-project-from-github)
 
 * [create project](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#create-project)
+* [edit env file]
 * [create Model](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md)
 * [Create Controller](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#create-controller)
 * [Create Controller with resources](https://github.com/jitunmohajan/laravel-note/blob/master/laravel%20project%20final%20note.md#create-controller--resources)
@@ -55,8 +56,16 @@ php artisan serve
 php artisan --port=8002 or anything
 _________________________________________________________________________________
 
+## Edit .env file like as followed
 
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=asd
+DB_USERNAME=root
+DB_PASSWORD=
 
+_________________________________________________________________________________
 ## Run laravel project from github:
 
 * first open git bash on the path where you want to run the laravel project
