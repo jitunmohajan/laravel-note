@@ -1,8 +1,0 @@
-git lfs install 
-git init
-git lfs track ".mp4"
-git add .gitattributes
-git add .
-git commit -m'da'
-git remote line
-git push origin master
