@@ -1,7 +1,9 @@
 first account>>
-1.git config --global user.email "myemail which uses on my account"
-2.git config --global user.name "username"
-configure another git account>>first add ssh key
-1.git config --global user.email "myemail which uses on my account"
-2.git config --global user.name "username"
-3.git remote set-url origin git@github.com:jitundark/test.git
+git config --global user.email "myemail which uses on my account"
+git config --global user.name "username"
+
+* configure another git account>>first add ssh key
+
+git config --global user.email "myemail which uses on my account"
+git config --global user.name "username"
+git remote set-url origin git@github.com:jitundark/test.git
