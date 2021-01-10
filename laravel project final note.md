@@ -338,39 +338,74 @@ ________________________________________________________________________________
 
 
 ## Seeder::::::>>>>>
-* firstly create a model if model didnt create before
 
-* step 1:
+* Step 1: remove User.php , files of database >>migrations folder , UserFactory.php
+* Step 2: firstly create a model if model didnt create before .Here Article is a model name
 
-php artisan make:seeder UsersTableSeeder
-* step 2:
-
-goto database/factory/UserFactory
-add fakers according to your need
-
-* step 3:
-
-goto database/seeds/DatabaseSeeder.php
-```php
-public function run()
-    {
-         $this->call(UsersTableSeeder::class);
-    }
 ```
+php artisan make:model Article -m 
+```
+
+* step 3 : Add Column on databse >> migration >> Article or the modelname files
+
+
+
 * step 4:
 
-goto database/seeds/UsersTableSeeder.php
+```
+php artisan make:seeder ArticlesTableSeeder
+```
+Than add this on edit database >> seeds >> ArticlesTableSeeder.php 
+
 ```php
 public function run()
     {
-        factory(App\Sample::class,15)->create();
+        factory(App\Article::Class, 200)->create();
     }
 ```
 
-* step 5:
+
+* step 5: Goto database/seeds/DatabaseSeeder.php change the Seeder name according to the Seeder creation
+
+```php
+public function run()
+    {
+         $this->call(ArticlesTableSeeder::class);//Here ArticlesTableSeeder seeder name
+    }
+```
+
+* step 6: create factory: here ArticleFactory=factory name and Article is model name
+```
+php artisan make:factory ArticleFactory --model=Article
+```
+goto database/factory/ArticleFactory
+add fakers according to your need
+
+```php
+<?php
+
+/** @var \Illuminate\Database\Eloquent\Factory $factory */
+
+use App\Article;
+use Faker\Generator as Faker;
+
+$factory->define(Article::class, function (Faker $faker) {
+    return [
+        'title' => $this->faker->text(50), //fakers
+        'body' => $this->faker->text(200)   //fakers
+    ];
+});
+
+```
+
+* step 7:
 
 php artisan migrate --seed
 
+** Reset: 
+```
+php artisan migrate:refresh --seed
+```
 _________________________________________________-
 
 ## ALL post show all data::>>
