@@ -251,7 +251,8 @@ ______________________________________________
         'lname' => 'required',
         'email' => 'required|email',
         'password' => 'required',
-	//'password' => 'required|exists:users,password|min:6',//here users=table_name and password coloum name 
+	//'password' => 'required|exists:users,password|min:6',//here users=table_name and password coloum name
+	'image' => 'required|mimes:jpeg,jpg,png,gif|max:10000'
     	]);
 
     	$obj=new Sample();
